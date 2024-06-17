@@ -1,0 +1,31 @@
+.board-column {
+  width: 300px;
+  margin-right: 16px;
+  min-height: 450px;
+  min-width: 260px;
+  background-color: #212121;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.board-column-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #212121;
+  padding: 10px;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.task-action-btn {
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  justify-content: flex-end !important;
+  border: none !important;
+}
+
+
+.task-card-container {
+  padding-bottom: 16px !important;
+}

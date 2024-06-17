@@ -1,20 +1,21 @@
-// src/App.js
-import React from "react";
+import { Box, Container, CssBaseline, Typography } from "@mui/material";
 import KanbanBoard from "./components/KanbanBoard";
-import DndContext from "./components/DnDContext";
-import { Container, CssBaseline, Typography } from "@mui/material";
 
 const App = () => {
   return (
-    <Container>
-      <CssBaseline />
-      <Typography variant="h3" gutterBottom>
-        Kanban Board
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Typography variant="h4" sx={{ marginY: 3 }}>
+        KanBan Board
       </Typography>
-      <DndContext>
-        <KanbanBoard />
-      </DndContext>
-    </Container>
+      <KanbanBoard />
+    </Box>
   );
 };
 
